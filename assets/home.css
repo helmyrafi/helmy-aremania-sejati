@@ -1,0 +1,202 @@
+.home-slide {
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 0px;
+    margin: 30px 10px 20px 15px;
+}
+
+.home-slide img {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+.mySlides {
+    border-bottom: #00c2ee solid;
+    border-width: 10px;
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: lightblue;
+}
+
+.text {
+    color: #1ad1ff;
+    padding-top: 260px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.text p {
+    font-weight: bold;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active-slide,
+.dot:hover {
+    background-color: #1ad1ff;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -moz-animation-name: fade;
+    -ms-animation-name: fade;
+    -o-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+#home-footer {
+    margin-top: 10px;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@-ms-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@-o-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width:1366px) {
+    .text {
+        padding-top: 210px;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .text {
+        padding-top: 120px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:1000px) and (min-width:800px) {
+    .text {
+        padding-top: 150px;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .text {
+        padding-top: 125px;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:730px) and (min-width:667px) {
+    .text {
+        padding-top: 125px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:650px) and (min-width:550px) {
+    .text {
+        padding-top: 110px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .text {
+        padding-top: 70px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+    .text {
+        padding-top: 70px;
+    }
+}
